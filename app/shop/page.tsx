@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SlidersHorizontal, ChevronDown, Check } from 'lucide-react';
 import { ProductCard } from '@/components/product/ProductCard';
@@ -11,7 +11,7 @@ import { sortProducts, cn } from '@/lib/utils';
 
 import { useSearchParams } from 'next/navigation';
 
-export default function ShopPage() {
+function ShopContent() {
   const searchParams = useSearchParams();
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [sortBy, setSortBy] = useState('featured');
@@ -255,5 +255,13 @@ export default function ShopPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ShopPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-ink flex items-center justify-center"><div className="w-10 h-10 border-2 border-white/20 border-t-white rounded-full animate-spin" /></div>}>
+      <ShopContent />
+    </Suspense>
   );
 }

@@ -18,7 +18,6 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
   
   const variant = product.variants?.[0];
   const mainImage = variant?.images?.[0] || '';
-  const hoverImage = variant?.images?.[1] || mainImage;
   
   // Construct badge logic based on product properties
   let badge = null;

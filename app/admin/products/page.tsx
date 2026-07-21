@@ -7,7 +7,7 @@ import { AdminSidebar } from '@/components/admin/AdminSidebar';
 import { getProducts } from '@/lib/firebase-db';
 import { uploadImage } from '@/lib/storage';
 import { db } from '@/lib/firebase';
-import { doc, updateDoc, setDoc, deleteDoc } from 'firebase/firestore';
+import { doc, updateDoc } from 'firebase/firestore';
 import type { Product } from '@/types';
 import { formatPrice } from '@/lib/utils';
 
@@ -71,7 +71,7 @@ export default function AdminProductsPage() {
       // Update local state to show new image instantly
       const updatedVariants = [...editingProduct.variants];
       if (!updatedVariants[0]) {
-        updatedVariants[0] = { color: 'Default', sizes: ['OS'], stock: 10, images: [] };
+        updatedVariants[0] = { id: 'v1', color: 'Default', colorHex: '#000000', sizes: [{ size: 'OS', stock: 10, sku: 'ADM-OS' }], images: [] };
       }
       updatedVariants[0].images = [downloadUrl, ...updatedVariants[0].images];
       

@@ -3,14 +3,12 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
-  Users, ShoppingBag, DollarSign, TrendingUp, 
-  PackageSearch, Bell, Settings, LogOut 
+  Users, ShoppingBag, DollarSign,
+  PackageSearch, Bell
 } from 'lucide-react';
 import { subscribeToOrders, getProducts } from '@/lib/firebase-db';
 import type { Order, Product } from '@/types';
 import { formatPrice, formatDate } from '@/lib/utils';
-import { CRLogo } from '@/components/ui/Logo';
-import Link from 'next/link';
 import { AdminSidebar } from '@/components/admin/AdminSidebar';
 
 export default function AdminDashboard() {

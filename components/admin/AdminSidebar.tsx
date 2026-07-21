@@ -6,7 +6,7 @@ import {
   Users, ShoppingBag, TrendingUp, 
   PackageSearch, Settings, LogOut, Image as ImageIcon
 } from 'lucide-react';
-import { CRLogo } from '@/components/ui/Logo';
+
 
 export function AdminSidebar() {
   const pathname = usePathname();
