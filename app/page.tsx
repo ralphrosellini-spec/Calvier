@@ -421,7 +421,7 @@ function Testimonials() {
       <div className="mx-auto max-w-[1400px] px-6 md:px-12 py-24 md:py-36 grid gap-14 md:grid-cols-3">
         {quotes.map((q, i) => (
           <figure key={i} className="cr-reveal" style={{ animationDelay: `${i * 120}ms` }}>
-            <div className="font-serif text-2xl md:text-3xl italic leading-snug">"{q.q}" </div>
+            <div className="font-serif text-2xl md:text-3xl italic leading-snug">&quot;{q.q}&quot; </div>
             <figcaption className="mt-8 eyebrow text-cream/60">— {q.a}</figcaption>
           </figure>
         ))}
