@@ -1,5 +1,5 @@
 ﻿// ============================================================
-// CALVIER ROSSEL â₹” Core Types
+// CALVIER ROSSEL "” Core Types
 // ============================================================
 
 export type Gender = 'men' | 'women' | 'unisex' | 'kids';

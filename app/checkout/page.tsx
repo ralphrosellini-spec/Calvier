@@ -272,7 +272,7 @@ export default function CheckoutPage() {
                   </div>
                   <div className="flex-1 min-w-0 py-1">
                     <h4 className="text-white text-xs font-medium truncate">{item.product.name}</h4>
-                    <p className="text-white/50 text-[10px] mt-1">{item.color} â₹¢ {item.size}</p>
+                    <p className="text-white/50 text-[10px] mt-1">{item.color} • {item.size}</p>
                     <p className="text-white text-xs mt-2">{formatPrice(item.price * item.quantity)}</p>
                   </div>
                 </div>

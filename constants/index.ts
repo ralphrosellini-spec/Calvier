@@ -1,4 +1,4 @@
-﻿import type { NavItem, SortOption } from '@/types';
+import type { NavItem, SortOption } from '@/types';
 
 export const BRAND_NAME = 'CALVIER ROSSEL';
 export const BRAND_TAGLINE = 'Luxury Redefined';
@@ -7,20 +7,20 @@ export const BRAND_DESCRIPTION =
 
 export const CURRENCIES = [
   { code: 'USD', symbol: '$', name: 'US Dollar' },
-  { code: 'EUR', symbol: 'â‚¬', name: 'Euro' },
-  { code: 'GBP', symbol: 'Â£', name: 'British Pound' },
-  { code: 'INR', symbol: 'â‚¹', name: 'Indian Rupee' },
-  { code: 'JPY', symbol: 'Â¥', name: 'Japanese Yen' },
-  { code: 'AED', symbol: 'Ø¯.Ø¥', name: 'UAE Dirham' },
+  { code: 'EUR', symbol: '€', name: 'Euro' },
+  { code: 'GBP', symbol: '£', name: 'British Pound' },
+  { code: 'INR', symbol: '₹', name: 'Indian Rupee' },
+  { code: 'JPY', symbol: '¥', name: 'Japanese Yen' },
+  { code: 'AED', symbol: 'د.إ', name: 'UAE Dirham' },
 ];
 
 export const LANGUAGES = [
-  { code: 'en', name: 'English', flag: 'ðŸ‡ºðŸ‡¸' },
-  { code: 'fr', name: 'FranÃ§ais', flag: 'ðŸ‡«ðŸ‡·' },
-  { code: 'de', name: 'Deutsch', flag: 'ðŸ‡©ðŸ‡ª' },
-  { code: 'it', name: 'Italiano', flag: 'ðŸ‡®ðŸ‡¹' },
-  { code: 'ja', name: 'æ—¥æœ¬èªž', flag: 'ðŸ‡¯ðŸ‡µ' },
-  { code: 'ar', name: 'Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©', flag: 'ðŸ‡¦ðŸ‡ª' },
+  { code: 'en', name: 'English', flag: '🇺🇸' },
+  { code: 'fr', name: 'Français', flag: '🇫🇷' },
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+  { code: 'it', name: 'Italiano', flag: '🇮🇹' },
+  { code: 'ja', name: '日本語', flag: '🇯🇵' },
+  { code: 'ar', name: 'العربية', flag: '🇦🇪' },
 ];
 
 export const NAV_ITEMS: NavItem[] = [
@@ -68,8 +68,8 @@ export const NAV_ITEMS: NavItem[] = [
     label: 'Collections',
     href: '/collections',
     children: [
-      { label: 'SS 2026 â₹” Aurora', href: '/collections/aurora-ss26', isFeatured: true },
-      { label: 'FW 2025 â₹” Noir', href: '/collections/noir-fw25' },
+      { label: 'SS 2026 — Aurora', href: '/collections/aurora-ss26', isFeatured: true },
+      { label: 'FW 2025 — Noir', href: '/collections/noir-fw25' },
       { label: 'Resort 2025', href: '/collections/resort-2025' },
       { label: 'Limited Edition', href: '/shop?filter=limited' },
     ],
@@ -128,14 +128,14 @@ export const SHIPPING_METHODS = [
   {
     id: 'standard',
     name: 'Standard Delivery',
-    description: '5â₹“7 business days',
+    description: '5"“7 business days',
     price: 0,
     free: true,
   },
   {
     id: 'express',
     name: 'Express Delivery',
-    description: '2â₹“3 business days',
+    description: '2"“3 business days',
     price: 15,
     free: false,
   },

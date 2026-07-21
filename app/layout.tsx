@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { Cormorant_Garamond, Inter } from 'next/font/google';
 import './globals.css';
 import { AnnouncementBar } from '@/components/layout/AnnouncementBar';
@@ -23,18 +23,18 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: 'CALVIER ROSSEL â₹” Luxury Shoes & Bags',
+  title: 'CALVIER ROSSEL — Luxury Shoes & Bags',
   description: 'CALVIER ROSSEL is an internationally recognized luxury fashion house crafting timeless leather shoes and bags in limited editions.',
   authors: [{ name: 'CALVIER ROSSEL' }],
   openGraph: {
-    title: 'CALVIER ROSSEL â₹” Luxury Shoes & Bags',
+    title: 'CALVIER ROSSEL — Luxury Shoes & Bags',
     description: 'CALVIER ROSSEL is an internationally recognized luxury fashion house crafting timeless leather shoes and bags in limited editions.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     site: '@calvierrossel',
-    title: 'CALVIER ROSSEL â₹” Luxury Shoes & Bags',
+    title: 'CALVIER ROSSEL — Luxury Shoes & Bags',
     description: 'CALVIER ROSSEL is an internationally recognized luxury fashion house crafting timeless leather shoes and bags in limited editions.',
   },
 };

@@ -75,14 +75,14 @@ function Hero({ image }: { image: string }) {
     <section className="relative h-[100svh] w-full overflow-hidden bg-ink text-cream -mt-16 md:-mt-20">
       <img
         src={image}
-        alt="Calvier Rossel â₹” Autumn 2026 campaign"
+        alt="Calvier Rossel — Autumn 2026 campaign"
         className="absolute inset-0 h-full w-full object-cover opacity-90"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-ink/40 via-transparent to-ink/60" />
 
       <div className="absolute inset-0 mx-auto flex max-w-[1600px] flex-col justify-end px-6 md:px-12 pb-24 md:pb-28">
         <div className="max-w-3xl">
-          <div className="eyebrow text-cream/70 cr-reveal">Autumn â₹” Winter Â· MMXXVI</div>
+          <div className="eyebrow text-cream/70 cr-reveal">Autumn — Winter • MMXXVI</div>
           <h1 className="mt-6 font-display text-[56px] sm:text-[84px] md:text-[128px] leading-[0.9]">
             <span className="block overflow-hidden">
               <span className="block cr-rise" style={{ animationDelay: "120ms" }}>
@@ -125,7 +125,7 @@ function Hero({ image }: { image: string }) {
         <div className="eyebrow text-cream/70">Look 01 / 24</div>
         <div className="h-24 w-px bg-cream/30" />
         <div className="eyebrow text-cream/70 [writing-mode:vertical-rl] rotate-180">
-          Firenze â₹” Paris â₹” Tokyo
+          Firenze — Paris — Tokyo
         </div>
       </div>
 
@@ -172,7 +172,7 @@ function NewCollection({ products, loading }: { products: Product[], loading: bo
 
 /* ---------- MARQUEE ---------- */
 function MarqueeWords() {
-  const words = ["Firenze", "â₹¢", "Handcrafted", "â₹¢", "Numbered", "â₹¢", "Since 1926", "â₹¢"];
+  const words = ["Firenze", "•", "Handcrafted", "•", "Numbered", "•", "Since 1926", "•"];
   const loop = [...words, ...words, ...words, ...words];
   return (
     <section className="border-y border-border/60 py-8 overflow-hidden bg-bone">
@@ -197,7 +197,7 @@ function FeaturedSplit({ image }: { image: string }) {
         <img src={image} alt="Atelier Top Handle" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
       </div>
       <div className="max-w-lg">
-        <div className="eyebrow text-muted-foreground">Featured â₹” Icons</div>
+        <div className="eyebrow text-muted-foreground">Featured — Icons</div>
         <h3 className="mt-5 font-display text-5xl md:text-6xl">The Atelier Top Handle</h3>
         <p className="mt-6 text-muted-foreground leading-relaxed">
           Numbered and signed. Eighteen hours of hand assembly, three grades of leather selection,
@@ -240,7 +240,7 @@ function BestSellers({ products, loading }: { products: Product[], loading: bool
             <h2 className="mt-4 font-display text-5xl md:text-7xl">Best sellers</h2>
           </div>
           <Link href="/shop" className="eyebrow link-underline hidden md:inline">
-            The full house â†’
+            The full house →
           </Link>
         </div>
         <div className="grid gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-4">
@@ -260,7 +260,7 @@ function BestSellers({ products, loading }: { products: Product[], loading: bool
                       loading="lazy" 
                       className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1400ms] group-hover:scale-105" 
                     />
-                    <div className="absolute left-4 top-4 eyebrow text-cream/80">NÂ° 0{i + 1}</div>
+                    <div className="absolute left-4 top-4 eyebrow text-cream/80">N° 0{i + 1}</div>
                   </div>
                   <div className="mt-5 flex justify-between">
                     <div>
@@ -356,9 +356,9 @@ function Timeline() {
   const events = [
     { y: "1926", t: "Firenze", d: "Calvier Rossel opens a single-room atelier off Piazza della Signoria." },
     { y: "1954", t: "The Pump", d: "The Rossel Pump is introduced. It has been in production, uninterrupted, ever since." },
-    { y: "1982", t: "Paris", d: "The Rue Saint-HonorÃ© flagship opens with the debut of the Atelier Top Handle." },
+    { y: "1982", t: "Paris", d: "The Rue Saint-Honoré flagship opens with the debut of the Atelier Top Handle." },
     { y: "2011", t: "Tokyo", d: "Ginza opens. A dedicated made-to-order salon on the fourth floor." },
-    { y: "2026", t: "One hundred", d: "A centennial collection of twelve shoes and nine bags, each numbered 001â₹“100." },
+    { y: "2026", t: "One hundred", d: "A centennial collection of twelve shoes and nine bags, each numbered 001—100." },
   ];
   return (
     <section className="mx-auto max-w-[1600px] px-6 md:px-12 py-24 md:py-36">
@@ -385,8 +385,8 @@ function Campaign({ bagsImage, shoesImage }: { bagsImage: string, shoesImage: st
   return (
     <section className="grid md:grid-cols-2">
       {[
-        { img: bagsImage, tag: "Bags Â· The New Guard", cta: "Enter the campaign" },
-        { img: shoesImage, tag: "Shoes Â· The Silhouette Study", cta: "Step inside" },
+        { img: bagsImage, tag: "Bags • The New Guard", cta: "Enter the campaign" },
+        { img: shoesImage, tag: "Shoes • The Silhouette Study", cta: "Step inside" },
       ].map((c) => (
         <Link key={c.tag} href="/shop" className="group relative block aspect-[4/5] md:aspect-auto md:h-[85vh] overflow-hidden">
           <img
@@ -421,8 +421,8 @@ function Testimonials() {
       <div className="mx-auto max-w-[1400px] px-6 md:px-12 py-24 md:py-36 grid gap-14 md:grid-cols-3">
         {quotes.map((q, i) => (
           <figure key={i} className="cr-reveal" style={{ animationDelay: `${i * 120}ms` }}>
-            <div className="font-serif text-2xl md:text-3xl italic leading-snug">â₹œ{q.q}â₹</div>
-            <figcaption className="mt-8 eyebrow text-cream/60">â₹” {q.a}</figcaption>
+            <div className="font-serif text-2xl md:text-3xl italic leading-snug">"{q.q}" </div>
+            <figcaption className="mt-8 eyebrow text-cream/60">— {q.a}</figcaption>
           </figure>
         ))}
       </div>
@@ -440,7 +440,7 @@ function Instagram() {
           <div className="eyebrow text-muted-foreground">Follow</div>
           <h2 className="mt-3 font-display text-4xl md:text-6xl">@calvierrossel</h2>
         </div>
-        <a href="#" className="eyebrow link-underline hidden md:inline">Open Instagram â†’</a>
+        <a href="#" className="eyebrow link-underline hidden md:inline">Open Instagram →</a>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-6 gap-2">
         {imgs.map((src, i) => (
@@ -475,7 +475,7 @@ function Newsletter() {
             className="flex-1 bg-transparent outline-none placeholder:text-ink/40"
             placeholder="Your private email address"
           />
-          <button className="eyebrow">Subscribe â†’</button>
+          <button className="eyebrow">Subscribe →</button>
         </form>
       </div>
     </section>

@@ -1,11 +1,11 @@
-﻿'use client';
+'use client';
 
 export function AnnouncementBar() {
   const items = [
     "Complimentary worldwide shipping",
     "Signature packaging, hand-tied",
-    "Numbered editions â₹” every piece",
-    "Book a private appointment Â· Paris Â· Milan Â· Tokyo",
+    "Numbered editions — every piece",
+    "Book a private appointment • Paris • Milan • Tokyo",
   ];
   const loop = [...items, ...items, ...items];
   return (
@@ -14,7 +14,7 @@ export function AnnouncementBar() {
         <div className="cr-marquee flex gap-16 py-2.5 whitespace-nowrap">
           {loop.map((t, i) => (
             <span key={i} className="eyebrow opacity-80">
-              {t} <span className="mx-8 opacity-40">âœ¦</span>
+              {t} <span className="mx-8 opacity-40">✦</span>
             </span>
           ))}
         </div>

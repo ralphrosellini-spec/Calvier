@@ -98,7 +98,7 @@ export function CartDrawer() {
                           </Link>
                           <div className="mt-1 flex gap-2 text-white/35 text-[10px] tracking-wide">
                             <span>{item.color}</span>
-                            <span>â₹¢</span>
+                            <span>•</span>
                             <span>Size {item.size}</span>
                           </div>
 

@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import Link from 'next/link';
 
@@ -14,7 +14,7 @@ export function Footer() {
     },
     {
       title: "Boutiques",
-      links: ["Paris â₹” Rue Saint-HonorÃ©", "Milan â₹” Via Montenapoleone", "Tokyo â₹” Ginza", "Private appointments"],
+      links: ["Paris — Rue Saint-Honoré", "Milan — Via Montenapoleone", "Tokyo — Ginza", "Private appointments"],
     },
   ];
 
@@ -56,12 +56,12 @@ export function Footer() {
         </div>
 
         <div className="mt-20 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-t border-cream/15 pt-8">
-          <div className="eyebrow opacity-60">Â© 2026 CALVIER ROSSEL. All Rights Reserved.</div>
+          <div className="eyebrow opacity-60">© 2026 CALVIER ROSSEL. All Rights Reserved.</div>
           <div className="flex gap-8 eyebrow opacity-60">
             <span>Privacy</span>
             <span>Terms</span>
             <span>Cookies</span>
-            <span>EN Â· EUR</span>
+            <span>EN • EUR</span>
           </div>
         </div>
       </div>

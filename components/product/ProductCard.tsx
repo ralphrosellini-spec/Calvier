@@ -16,8 +16,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
   const { toggleItem, isInWishlist } = useWishlistStore();
   const inWishlist = isInWishlist(product.id);
   
-  const variant = product.variants?.[0];
-  const mainImage = variant?.images?.[0] || '';
+  const mainImage = product.variants?.[0]?.images?.[0] || '/shoe-1.jpg';  
   
   // Construct badge logic based on product properties
   let badge = null;
